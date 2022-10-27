@@ -165,7 +165,7 @@ bool AddAnotherItem(string typeOfRepeat)
         string input = Console.ReadLine().ToLower().Trim();
         if (input.Contains("y") || input.Contains("n"))
         {
-            goAgain = input == "y" || input.ToLower().Trim() == "yes";
+            goAgain = input == "y" || input == "yes";
             isValidInput = true;
             Console.Clear();
             return goAgain;
